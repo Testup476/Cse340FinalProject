@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Kinshasa",
+    "description": "Cultural and economic capital of the DRC, rich in music and nightlife.",
+    "info": {
+      "stylistsAvailable": 77,
+      "services": "Haircut, Coloring, Event Hairstyles"
+    },
+    "image": "/images/kinshasa.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Lubumbashi",
+    "description": "Industrial center of Katanga, with many modern salons.",
+    "info": {
+      "stylistsAvailable": 63,
+      "services": "Haircut, Coloring, Hair Treatments"
+    },
+    "image": "/images/lubumbashi.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Mbuji-Mayi",
+    "description": "A dynamic mining city with an active community of stylists.",
+    "info": {
+      "stylistsAvailable": 55,
+      "services": "Haircut, Coloring, Event Hairstyles"
+    },
+    "image": "/images/mbujimayi.webp"
+  },
+  {
+    "id": 4,
+    "name": "Goma",
+    "description": "Picturesque city on the shores of Lake Kivu, known for its festivals and local events.",
+    "info": {
+      "stylistsAvailable": 30,
+      "services": "Haircut, Coloring, Hair Treatments"
+    },
+    "image": "/images/goma.webp"
+  }
+]

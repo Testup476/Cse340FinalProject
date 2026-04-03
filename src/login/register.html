@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>REGISTER PAGE</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#"
+          ><h1>✂️ Book<span>MyHair</span></h1></a
+        >
+        <div>
+          <img src="/images/logo.svg" alt="logo" />
+        </div>
+      </nav>
+    </header>
+    <main class="auth-main">
+      <div class="auth-container">
+        <!-- Branding / Logo -->
+        <div class="auth-brand">
+          <img src="/images/logo.svg" alt="BookMyHair Logo" />
+        </div>
+
+        <!-- Login Form -->
+        <div class="auth-form">
+          <h2>Create Account</h2>
+          <form action="/account/register" method="POST">
+            <!-- Full Name -->
+            <label for="fullname">Full Name</label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Your full name"
+              required
+            />
+
+            <!-- Email -->
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="yourinitial@domain.com"
+              required
+            />
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Create a password"
+              required
+              pattern="^[A-Z](?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':\'\\|,.<>\/?]).{5,}$"
+              title="Password must be at least 6 characters, start with a capital letter, contain a number and a symbol"
+            />
+
+            <!-- Confirm Password -->
+            <label for="confirm-password">Confirm Password</label>
+            <input
+              type="password"
+              id="confirm-password"
+              name="confirm-password"
+              placeholder="Confirm your password"
+              required
+            />
+
+            <button type="submit">Sign Up</button>
+          </form>
+          <p class="auth-footer">
+            Already have an account? <a href="./index.html">Login</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 BookMyHair.com | Wdd330 Final Project</p>
+    </footer>
+  </body>
+</html>

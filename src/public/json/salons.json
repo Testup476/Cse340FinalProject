@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "name": "Kin Beauty Salon",
+    "cityId": 1,
+    "image": "/images/salon1.avif",
+    "services": "Haircut, Coloring",
+    "hours": "09:00 - 18:00"
+  },
+  {
+    "id": 2,
+    "name": "Congo Style",
+    "cityId": 1,
+    "image": "/images/salon2.avif",
+    "services": "Braids, Haircut",
+    "hours": "08:00 - 17:00"
+  },
+  {
+    "id": 3,
+    "name": "Urban Hair Kin",
+    "cityId": 1,
+    "image": "/images/salon3.avif",
+    "services": "Styling, Treatment",
+    "hours": "10:00 - 19:00"
+  },
+
+  {
+    "id": 4,
+    "name": "Mbuji Hair Pro",
+    "cityId": 2,
+    "image": "/images/salon4.avif",
+    "services": "Haircut, Braids",
+    "hours": "09:00 - 18:00"
+  },
+  {
+    "id": 5,
+    "name": "Diamond Styles",
+    "cityId": 2,
+    "image": "/images/salon5.avif",
+    "services": "Coloring, Treatment",
+    "hours": "08:00 - 17:00"
+  },
+  {
+    "id": 6,
+    "name": "Beauty Hub Mbuji",
+    "cityId": 2,
+    "image": "/images/salon6.avif",
+    "services": "Haircut, Styling",
+    "hours": "10:00 - 19:00"
+  },
+
+  {
+    "id": 7,
+    "name": "Lushi Glam",
+    "cityId": 3,
+    "image": "/images/salon7.avif",
+    "services": "Haircut, Coloring",
+    "hours": "09:00 - 18:00"
+  },
+  {
+    "id": 8,
+    "name": "Katanga Beauty",
+    "cityId": 3,
+    "image": "/images/salon8.avif",
+    "services": "Braids, Styling",
+    "hours": "08:00 - 17:00"
+  },
+  {
+    "id": 9,
+    "name": "Modern Hair Lushi",
+    "cityId": 3,
+    "image": "/images/salon9.avif",
+    "services": "Treatment, Haircut",
+    "hours": "10:00 - 19:00"
+  },
+
+  {
+    "id": 10,
+    "name": "Goma Style",
+    "cityId": 4,
+    "image": "/images/salon10.avif",
+    "services": "Haircut, Braids",
+    "hours": "09:00 - 18:00"
+  },
+  {
+    "id": 11,
+    "name": "Lake Kivu Beauty",
+    "cityId": 4,
+    "image": "/images/salon11.avif",
+    "services": "Coloring, Styling",
+    "hours": "08:00 - 17:00"
+  },
+  {
+    "id": 12,
+    "name": "Volcano Hair Studio",
+    "cityId": 4,
+    "image": "/images/salon12.avif",
+    "services": "Treatment, Haircut",
+    "hours": "10:00 - 19:00"
+  }
+]
