@@ -320,10 +320,15 @@ form button:hover {
 
 .cities-section h2 {
   text-align: left;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: var(--font-headline);
   color: var(--primary-color);
   margin-bottom: 2rem;
+}
+
+.city-region {
+  text-transform: uppercase;
+  color: var(--tertiary-color);
 }
 
 .cities-grid {
@@ -332,6 +337,9 @@ form button:hover {
   gap: 1.5rem;
 }
 
+.cities-flex {
+  display: flex;
+}
 .city-card {
   background: #fff;
   border-radius: 8px;
@@ -450,6 +458,10 @@ footer {
   .cities-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  .cities-flex {
+    flex-direction: column;
+  }
   footer {
     display: block;
   }
@@ -525,6 +537,15 @@ footer {
   .cities-grid {
     grid-template-columns: 1fr;
   }
+  .cities-flex {
+    flex-direction: column;
+    width: 100%;
+  }
+  .cities-section h2 {
+    font-size: var(--small-font);
+    font-style: bold;
+  }
+
   footer {
     display: block;
   }

@@ -48,5 +48,22 @@ export const cityTemplate = (data) => {
 
 //Salon template 
 export const salonTemplate = (data)=>{
+
+  return `
+
+   <div class="city-card">
+      <a href="/coiffure_listing/index.html?salon=${data.name}&id=${data.id}">
+        <img src="${data.image}" alt=" of ${data.name}">
+        <h3>${data.name}</h3>
+      </a>
+      <p class="city-desc">
+        ${data.services}
+      </p>
+      <p class="city-info">
+        <strong>Open Daily :</strong> ${data.hours} | 
+      </p>
+    </div>
+  
+  `
   
 }
