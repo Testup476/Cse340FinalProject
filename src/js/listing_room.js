@@ -1,4 +1,4 @@
-import { getParam, renderListWithTemplate } from "./utils.mjs";
+import { getParam, renderListWithTemplate, setSelector } from "./utils.mjs";
 import ExternalService from "./ExternalService.mjs";
 import { salonTemplate } from "./collectionrenderer.mjs";
 
@@ -8,8 +8,13 @@ const salonid = getParam("id");
 const datasource = new ExternalService("salons");
 const parentElement = document.querySelector(".cities-grid");
 const salonTri = await datasource.FilterByid(salonid);
-const cityname = document.querySelector(".city-region");
-cityname.innerText = city;
+
+// Display the city or region name in the interface
+// - ".city-region" → target HTML element
+// - city → value retrieved from URL or data source
+// Uses setSelector utility to simplify DOM manipulation
+
+setSelector(".city-region", city);
 
 renderListWithTemplate(
   salonTemplate,
@@ -18,11 +23,3 @@ renderListWithTemplate(
   "afterbegin",
   true,
 );
-
-// console.log(`Recherche dans la ville de ${city}`);
-
-// console.log("ID salon");
-// console.log(salonid);
-
-// console.log(`les salons selon l'ID ${salonid}`);
-console.log(salonTri);

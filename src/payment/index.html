@@ -3,9 +3,77 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script type="module" src="../js/checkout.js"></script>
     <title>Document</title>
   </head>
   <body>
-    <h1>payment</h1>
+     <header>
+      <nav>
+        <a href="../index.html"
+          ><h1>✂️ Book<span>MyHair</span></h1></a
+        >
+        <div>
+          <img src="/images/logo.svg" alt="logo" />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="payment-section">
+         <div class="payment-card">
+                <!-- 💳 Formulaire paiement -->
+                <form class="payment-form" id="form-check" method="POST">
+                        <input id="fname" type="text" placeholder="Full Name" required pattern="^[A-Z][a-z]+( [A-Z][a-z]+)*$"
+                        title="The Full name must follow this Model Jean Marc Kanda">
+                        <input id="mail" type="email" placeholder="yourname@domain.com" required
+                        title="Invalid email format">
+
+                        <input id="phone" type="tel" placeholder="Phone Number" required
+                        pattern="^\+243[0-9]{9}$"
+                        title="The phone number must start with +243 followed by 9 digits">
+                        <button id="submit" type="submit">Confirm Booking</button>
+                </form>
+         </div>
+          <div class="card-info">
+             <!-- 💇 Infos coiffure -->
+              <div class="service-info">
+                 <h2 class="name">Nom salon</h2>
+                 <p>Nom coiffure: <strong ><span class="hair"></span> </strong></p>
+                 <p>Category: <span class="category"></span></p>
+                 <p>duration: <strong class="duration">30min</strong></p>
+                <p>Base Price: $<strong class="base-price"></strong></p>
+              </div>
+                  <!-- 🚗 Option domicile -->
+              <div class="home-option">
+               <label>
+                    <input type="checkbox" id="isHome" value="5.3">
+                           Request Home Service (+$1.9 /km)
+                </label>
+              </div>
+
+              <!-- 💰 Prix total -->
+                    <div class="total-price">
+                       <h3>Total: <span id="price">$10</span></h3>
+                     </div>
+          </div>
+          <div class="card-image">
+            <img class="imgs" src="" alt="Image Result">
+          </div>
+      </div>
+    <div class="info-map">
+          <h2>📍 Your Location & Nearby Salons</h2>
+          <div class="info" id="city"> 📍 Detecting location...</div>
+    </div>
+      <div class="map-container">
+          <div id="map"></div>
+        </div>
+    </main>
+     <footer>
+      <p>&copy; 2025 BookMyHair.com | Wdd330 Final Project</p>
+    </footer>
+
   </body>
 </html>

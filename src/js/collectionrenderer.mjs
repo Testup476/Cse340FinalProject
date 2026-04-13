@@ -31,7 +31,7 @@ export const cityTemplate = (data) => {
   return `
     <div class="city-card">
       <a href="/listing_room/index.html?city=${data.name}&id=${data.id}">
-        <img src="${data.image}" alt="${data.name}">
+        <img src="${data.image}" alt=" image of ${data.name}">
         <h3>${data.name}</h3>
       </a>
       <p class="city-desc">
@@ -52,8 +52,8 @@ export const salonTemplate = (data)=>{
   return `
 
    <div class="city-card">
-      <a href="/coiffure_listing/index.html?salon=${data.name}&id=${data.id}">
-        <img src="${data.image}" alt=" of ${data.name}">
+      <a href="/coiffure_listing/index.html?salon=${data.name}&refsalon=${data.id}&refcity=${data.cityId}">
+        <img src="${data.image}" alt="Image of ${data.name}">
         <h3>${data.name}</h3>
       </a>
       <p class="city-desc">
@@ -66,4 +66,37 @@ export const salonTemplate = (data)=>{
   
   `
   
+}
+
+// Card Template
+export const cardTemplate = (data) =>{
+  return `
+  <div class="city-card-card">
+         <a href="/payment/index.html?salonId=${data.salonId}&hairId=${data.id}">
+     <div class="card">
+    <img src="${data.image}" alt=" Image for ${data.name}">
+    <div class="card-content">
+      <h3>${data.name}</h3>
+      <p>${data.category}</p>
+      <p>${data.duration}</p>
+    </div>
+  </div>
+     </a>
+  </div>
+  `
+}
+
+//AppointementTemplate
+
+export const Template = (item)=>{
+  return`
+    <p><strong>Salon:</strong> <span>${item.salonName}</span></p>
+    <p><strong>Category:</strong> <span>${item.category}</span></p>
+    <p><strong>Duration:</strong> <span>${item.duration}</span></p>
+    <p><strong>Price:</strong> <span>${item.Bill}</span></p>
+    <p><strong>Phone:</strong> <span>${item.phone}</span></p>
+    <p><strong>Email:</strong><span>${item.Email}</span></p>
+    <p><strong>Model:</strong><span>${item.model}</span></p>
+  </div>
+  `
 }

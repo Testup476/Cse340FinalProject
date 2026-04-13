@@ -3,9 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script type="module" src="../js/listing_coiffure.js"></script>
+    <title>HAIR | HAIRCUT</title>
   </head>
   <body>
-    <h1>COIFFURE</h1>
+    <header>
+      <nav>
+        <a href="../index.html"
+          ><h1>✂️ Book<span>MyHair</span></h1></a
+        >
+        <div>
+          <a href=""><img src="/images/logo.svg" alt="logo" /></a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="card-section">
+        <div class="salon-card">
+          <h2>Salon: <span class="salonname"></span></h2>
+          <p><strong>Location:</strong> <span class="location"></span></p>
+          <p><strong>Business Hours:</strong> <span class="serviceh"></span></p>
+        </div>
+        <div class="search-bar">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search hairstyle..."
+          />
+        </div>
+        <div class="container" id="hairContainer"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 BookMyHair.com | Wdd330 Final Project</p>
+    </footer>
   </body>
 </html>

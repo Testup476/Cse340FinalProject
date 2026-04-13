@@ -14,6 +14,7 @@ export default defineConfig({
         listing_room: resolve(__dirname, "src/listing_room/index.html"),
         payment: resolve(__dirname, "src/payment/index.html"),
         login: resolve(__dirname, "src/login/index.html"),
+        booking: resolve(__dirname, "src/booking/index.html"),
       },
     },
   },

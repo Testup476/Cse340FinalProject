@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "salonId": 1,
+    "name": "Classic Fade",
+    "category": "Men",
+    "price": 15,
+    "duration": "30 min",
+    "image": "/images/haircut1.avif"
+  },
+  {
+    "id": 2,
+    "salonId": 1,
+    "name": "Box Braids",
+    "category": "Women",
+    "price": 40,
+    "duration": "2 hours",
+    "image": "/images/haircut2.avif"
+  },
+  {
+    "id": 3,
+    "salonId": 2,
+    "name": "Kids Cut",
+    "category": "Boys",
+    "price": 10,
+    "duration": "20 min",
+    "image": "images/style3.jpg"
+  },
+  {
+    "id": 4,
+    "salonId": 3,
+    "name": "Hair Coloring",
+    "category": "Women",
+    "price": 35,
+    "duration": "1 hour",
+    "image": "images/style4.jpg"
+  },
+  {
+    "id": 5,
+    "salonId": 7,
+    "name": "Modern Fade",
+    "category": "Men",
+    "price": 20,
+    "duration": "30 min",
+    "image": "images/style5.jpg"
+  },
+  {
+    "id": 6,
+    "salonId": 10,
+    "name": "Natural Braids",
+    "category": "Girls",
+    "price": 25,
+    "duration": "1.5 hours",
+    "image": "images/style6.jpg"
+  },
+  {
+    "id": 7,
+    "salonId": 2,
+    "name": "Kids girl",
+    "category": "Boys",
+    "price": 10,
+    "duration": "20 min",
+    "image": "/images/hero.jpg"
+  }
+]

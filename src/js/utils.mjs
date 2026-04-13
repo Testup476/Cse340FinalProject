@@ -6,6 +6,12 @@ export function getParam(param){
   return urlParm.get(param);
 }
 
+// Attach an event listener to a selected DOM element if it exists
+export function on(selector,event, callback){
+  const element =document.querySelector(selector);
+   element && element.addEventListener(event,callback)
+}
+
 // save data to local storage
 export function setLocalStorage(key, data) {
   localStorage.setItem(key, JSON.stringify(data));
@@ -26,6 +32,12 @@ export const redirectTo = (path)=>{
   window.location.href = path;
 }
 
+//Creat a selctor for the DOM
+
+export const setSelector = (selector, value)=>{
+  const element = document.querySelector(selector)
+   element && (element.innerHTML = value)
+}
 
 
 // Alert message when something wrong
