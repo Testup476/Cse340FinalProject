@@ -1,5 +1,6 @@
 import { redirectTo, getLocalStorage,alertMsg, removeItem, on, setSelector} from "./utils.mjs"
 import { Template } from "./collectionrenderer.mjs";
+import authentication from "./authentication";
 
 
 // localStorage returns a single object instead of an array
@@ -25,35 +26,16 @@ on(".btn",'click',()=>{
 }
 
 on(".btn-explore",'click',()=>{
-    redirectTo("./city/index.html")
+    redirectTo("./login/index.html")
 })
 
-// async function getCity(cityName) {
-//   const response = await fetch(
-//     `https://nominatim.openstreetmap.org/search?city=${cityName}&format=json`
-//   )
+// Authentification
 
-//   const data = await response.json()
-//   console.log(data)
-// }
+const authen = new  authentication(".auth-container")
 
-// getCity("Mbujimayi")
+await authen.init()
 
-// nominatim
 
-fetch("https://nominatim.openstreetmap.org/reverse?lat=-4.4419&lon=15.2663&format=json")
-  .then(res => res.json())
-  .then(data => {
-    const address = data.address
-
-    const city =
-      address.town ||
-      address.city ||
-      address.municipality ||
-      address.state
-
-    console.log("VILLE:", city)
-  })
 
 
 

@@ -6,8 +6,8 @@
     "image": "/images/salon1.avif",
     "services": "Haircut, Coloring",
     "hours": "09:00 - 18:00",
-    "lat": -4.4412,
-    "lon": 15.2668
+    "lat": -4.3015,
+    "lon": 15.3136
   },
   {
     "id": 2,
@@ -16,8 +16,8 @@
     "image": "/images/salon2.avif",
     "services": "Braids, Haircut",
     "hours": "08:00 - 17:00",
-    "lat": -4.4338,
-    "lon": 15.2750
+    "lat": -4.3276,
+    "lon": 15.3136
   },
   {
     "id": 3,
@@ -26,8 +26,8 @@
     "image": "/images/salon3.avif",
     "services": "Styling, Treatment",
     "hours": "10:00 - 19:00",
-    "lat": -4.4485,
-    "lon": 15.2589
+    "lat": -4.3658,
+    "lon": 15.3452
   },
 
   {

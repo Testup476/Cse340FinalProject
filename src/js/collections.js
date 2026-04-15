@@ -11,27 +11,22 @@ import { renderListWithTemplate } from "./utils.mjs";
  */
 
 export default class collections {
-  constructor(datasouce, listElement, template) {
-    // this.category = category;
+  constructor(datasouce, listElement,list, template) {
+   
     this.datasouce = datasouce;
     this.listElement = listElement;
     this.template = template;
+    this.list= list
   }
 
   async init() {
-    const data = await this.datasouce.getsource();
-    this.render(data);
+    this.render(this.list)
+    
   }
 
-  // render liste of element
+  // render list of element
   render(list) {
     const renderTemplate = (product) => this.template(product);
-    renderListWithTemplate(
-      renderTemplate,
-      this.listElement,
-      list,
-      "afterbegin",
-      false,
-    );
+    renderListWithTemplate(renderTemplate, this.listElement,list,"afterbegin",true)
   }
 }

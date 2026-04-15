@@ -28,7 +28,7 @@
         <!-- Login Form -->
         <div class="auth-form">
           <h2>Login to Your Account</h2>
-          <form action="/account/login" method="POST">
+          <form id="formlog" action="/login/" method="get">
             <label for="email">Email</label>
             <input
               type="email"
@@ -44,10 +44,9 @@
               id="password"
               name="password"
               placeholder="Enter your password"
-              pattern="^[A-Z](?=.*\d)(?=.*[!@#$%^&*()_+\-=\[\]{};':\'\\|,.<>\/?]).{5,}$"
               required
             />
-            <button type="submit">Login</button>
+            <button id="btn" type="submit">Login</button>
           </form>
           <p class="auth-footer">
             Don't have an account? <a href="./register.html">Sign Up</a>

@@ -38,8 +38,6 @@ const [salonInfo, hairInfo,filteredSalons] = await Promise.all([
   salondata.FilterByscity(Idcity)
 ]);
 
-console.log(filteredSalons);
-
 
 //Render data into the DOM
 setSelector(".name", salonInfo.name);

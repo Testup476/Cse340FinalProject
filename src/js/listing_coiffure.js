@@ -2,7 +2,7 @@
 
 import { cardTemplate } from "./collectionrenderer.mjs";
 import ExternalService from "./ExternalService.mjs";
-import { getParam, setSelector, renderListWithTemplate } from "./utils.mjs";
+import { getParam, setSelector, renderListWithTemplate, getLocalStorage } from "./utils.mjs";
 import { alertMsg } from "./utils.mjs";
 // ==========================================
 // Retrieve parameters from the URL
@@ -16,6 +16,10 @@ const salonId = getParam("refsalon");
 
 // Get the city ID rom the URL (where the salon is located)
 const locationsalon = getParam("refcity");
+
+//Get the Email address from LocalStorage
+const getenmail = getLocalStorage ("email")
+
 
 // ==========================================
 // Initialize external services
@@ -65,9 +69,9 @@ setSelector(".location", cityinfo.name);
 // Display the salon working hours
 setSelector(".serviceh", salonInfo.hours);
 
-console.log(salonTri);
+//Displaye the email Address
+setSelector(".email",getenmail)
 
-// Call the renderListWithTemplate function to renderet the list of hairstyle according to the salon and city
 
 // call the parenten element
 const parentElement = document.querySelector(".container");
